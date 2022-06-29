@@ -45,6 +45,7 @@ export { default as HelpIcon } from "./_Icons/Help";
 export { default as InfoIcon } from "./_Icons/Info";
 export { default as ListViewIcon } from "./_Icons/ListView";
 export { default as LogoIcon } from "./_Icons/Logo";
+export { default as LogoMIBO } from "./_Icons/MIBO";
 export { default as LogoRoundIcon } from "./_Icons/LogoRound";
 export { default as MetamaskIcon } from "./_Icons/Metamask";
 export { default as MinusIcon } from "./_Icons/Minus";

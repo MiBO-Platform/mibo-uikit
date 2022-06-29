@@ -40,7 +40,7 @@ import {
   Instagram,
   Website,
 } from "./Icons";
-import { BSC, BANANA, BNB, ETH, GNANA, POLYGON } from "./tokens";
+import { BSC, BANANA, BNB, ETH, GNANA, MIBO, POLYGON } from "./tokens";
 import { IconStyles } from "./Icons/types";
 
 const Svg: React.FC<SvgProps> = ({ icon, ...props }: any) => {
@@ -74,6 +74,9 @@ const Svg: React.FC<SvgProps> = ({ icon, ...props }: any) => {
   }
   if (icon === icons.GNANA) {
     return <Gnana {...props} getStyles={getStyles} />;
+  }
+  if (icon === icons.MIBO) {
+    return <MIBO {...props} getStyles={getStyles} />;
   }
   if (icon === icons.INFO) {
     return <Info {...props} getStyles={getStyles} />;
@@ -115,7 +118,7 @@ const Svg: React.FC<SvgProps> = ({ icon, ...props }: any) => {
     return <ProfileIcon {...props} getStyles={getStyles} />;
   }
   if (icon === icons.LOGO) {
-    return <Logo {...props} getStyles={getStyles} />;
+    return <MIBO {...props} getStyles={getStyles} />;
   }
   if (icon === icons.HAMBURGER) {
     return <Hamburger {...props} getStyles={getStyles} />;

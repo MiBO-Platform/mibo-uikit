@@ -37,7 +37,7 @@ const DropdownItem: React.FC<DropdownItemProps> = ({
         color: "text",
         borderRadius: "10px",
         "&:hover": {
-          backgroundColor: "lvl2",
+          backgroundColor: "#ffff",
         },
       }}
     >

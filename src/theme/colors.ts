@@ -30,6 +30,7 @@ export const lightColors: Colors = {
   dividerColor: "#E2E2E2",
   navbar: "#F9F4E7",
   gradients: {
+    buttonGradient: "radial-gradient(100% 100% at 53.13% 0%, #31e7fa 0%, #4477ff 52.6%, #74cdff 100%)",
     newGradient: "linear-gradient(53.53deg, #A16552 15.88%, #E1B242 92.56%)",
     bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
   },

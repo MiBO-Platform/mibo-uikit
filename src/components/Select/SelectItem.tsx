@@ -18,7 +18,7 @@ const SelectItem: React.FC<SelectItemProps> = ({ onClick, value, active, size = 
         cursor: "pointer",
         borderRadius: "10px",
         "&:hover": {
-          backgroundColor: !active ? "lvl2" : undefined,
+          backgroundColor: !active ? "#fff" : undefined,
         },
       }}
     >

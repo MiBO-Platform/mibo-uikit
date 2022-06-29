@@ -15,7 +15,7 @@ const RunFiatButton: React.FC<RFBProps> = ({ runFiat, mini, t, ...props }) => {
         width: (mini && "32px") || "max-content",
         height: (mini && "32px") || "40px",
         marginRight: "15px",
-        background: (mini && "white3") || "yellow",
+        background: (mini && "white3") || "#183B56",
         border: "none",
         fontSize: "16px",
         "&&": {

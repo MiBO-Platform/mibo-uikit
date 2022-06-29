@@ -8,7 +8,7 @@ const buttonBaseStyles = {
   cursor: "pointer",
   fontWeight: "bold",
   "&&": {
-    borderRadius: "normal",
+    borderRadius: "15px",
   },
 };
 
@@ -143,8 +143,8 @@ const Apeswap: Theme = {
         margin: "auto",
       },
       "&:checked ": {
-        background: "yellow",
-        borderColor: "yellow",
+        background: "radial-gradient(100% 100% at 53.13% 0%, #31e7fa 0%, #4477ff 52.6%, #74cdff 100%)",
+        borderColor: "transparent",
         "& + svg": {
           display: "block",
         },
@@ -155,11 +155,11 @@ const Apeswap: Theme = {
       },
       "&:focus": {
         outline: "none",
-        boxShadow: "0px 0px 0px 1px #000, 0px 0px 0px 4px rgb(255, 179, 0, .4)",
+        boxShadow: "0px 0px 0px 1px #000, 0px 0px 0px 4px rgb(255, 255, 255, .4)",
       },
       "&:hover:not(:disabled):not(:checked)": {
-        borderColor: "yellow",
-        boxShadow: "0px 0px 0px 1px #000, 0px 0px 0px 4px rgb(255, 179, 0, .4)",
+        borderColor: "lvl1",
+        boxShadow: "0px 0px 0px 1px #000, 0px 0px 0px 4px rgb(255, 255, 255, .4)",
       },
     },
     radio: {
@@ -188,8 +188,8 @@ const Apeswap: Theme = {
         borderRadius: "50px",
       },
       "&:checked ": {
-        background: "yellow",
-        borderColor: "yellow",
+        background: "radial-gradient(100% 100% at 53.13% 0%, #31e7fa 0%, #4477ff 52.6%, #74cdff 100%)",
+        borderColor: "transparent",
         "& + span": {
           display: "block",
         },
@@ -199,7 +199,7 @@ const Apeswap: Theme = {
         boxShadow: "0px 0px 0px 1px #000, 0px 0px 0px 4px rgb(255, 179, 0, .2)",
       },
       "&:hover:not(:disabled):not(:checked)": {
-        borderColor: "yellow",
+        borderColor: "#f8f8fc",
       },
     },
     label: {
@@ -212,6 +212,7 @@ const Apeswap: Theme = {
   },
   borders: {
     primaryButton: "3px solid #000",
+    buttonGradient: "radial-gradient(100% 100% at 53.13% 0%, #31e7fa 0%, #4477ff 52.6%, #74cdff 100%)",
     primaryBtnDisable: "3px solid transparent",
     secondaryButton: "3px solid #000",
     secondaryButtonDisable: "3px solid #FDFBF5",
@@ -224,15 +225,17 @@ const Apeswap: Theme = {
   buttons: {
     primary: {
       ...buttonBaseStyles,
-      background: "black",
-      border: "primaryButton",
+      background: "radial-gradient(100% 100% at 53.13% 0%, #31e7fa 0%, #4477ff 52.6%, #74cdff 100%)",
+      border: "transparent",
       color: "primaryBright",
 
       "&:disabled": {
         cursor: "not-allowed",
-        background: "transparent",
-        color: "black",
-        border: "secondaryButton",
+        background: "white",
+        border: "solid 1px rgba(10, 33, 65, 0.05)",
+        color: "#ccc",
+        fontWeight: "600",
+        // boxShadow: "0px 2px 4px #7e8eb11f"
       },
 
       "&:hover": {
@@ -245,20 +248,22 @@ const Apeswap: Theme = {
     },
     secondary: {
       ...buttonBaseStyles,
-      background: "transparent",
-      border: "secondaryButton",
-      color: "black",
+      background: "#183b56",
+      color: "#fff",
+      border: "solid 1px #183b56",
+      fontWeight: "600",
 
       "&:disabled": {
         cursor: "not-allowed",
-        background: "transparent",
-        color: "black",
-        border: "secondaryButton",
+        background: "",
+        color: "#ccc",
+        fontWeight: "600",
       },
 
       "&&:hover": {
         "&:not([disabled])": {
-          borderColor: "hoveredPink",
+          borderColor: "black",
+          background: "black",
         },
         "&:disabled": {},
       },
@@ -268,16 +273,22 @@ const Apeswap: Theme = {
       background: "transparent",
       border: "none",
       color: "text",
+      fontWeight: "600",
+      boxShadow: "0px 2px 4px #7e8eb11f",
 
       "&:disabled": {
         cursor: "not-allowed",
         background: "transparent",
-        color: "primaryButtonDisable",
+        border: "solid 1px rgba(10, 33, 65, 0.05)",
+        color: "#ccc",
+        fontWeight: "600",
       },
 
-      "&:hover": {
+      "&&:hover": {
         "&:not([disabled])": {
-          background: "white4",
+          borderColor: "black",
+          background: "black",
+          color: "#fff"
         },
         "&:disabled": {},
       },
@@ -289,14 +300,14 @@ const Apeswap: Theme = {
 
       "&:hover": {
         "&:not([disabled])": {
-          color: "yellow",
+          color: "black",
         },
         "&:disabled": {},
       },
 
       "&:disabled": {
         cursor: "not-allowed",
-        background: "white3",
+        background: "transparent",
         color: "primaryButtonDisable",
       },
     },

@@ -14,6 +14,7 @@ type InactiveButtonProps = {
 
 const InactiveButton = styled(Button)<InactiveButtonProps>`
   background-color: transparent;
+  box-shadow: none;
   color: rgba(122, 122, 122, 1);
   &:hover:not(:disabled):not(:active) {
     background-color: transparent;
@@ -26,7 +27,7 @@ const InactiveButton = styled(Button)<InactiveButtonProps>`
 const ButtonMenuItem: React.FC<ButtonMenuItemProps> = ({
   isActive = false,
   size = sizes.MEDIUM,
-  variant = variants.PRIMARY,
+  variant = variants.TERTIARY,
   as,
   fontFamily,
   fontSize,
@@ -39,7 +40,7 @@ const ButtonMenuItem: React.FC<ButtonMenuItemProps> = ({
         forwardedAs={as}
         size={size}
         variant="tertiary"
-        colorKey={variant === variants.PRIMARY || variants.PRIMARY ? "primary" : "textSubtle"}
+        colorKey={variant === variants.TERTIARY || variants.TERTIARY ? "tertiary" : "textSubtle"}
         fontFamily={fontFamily}
         fontSize={fontSize}
         isMobile={isMobile}

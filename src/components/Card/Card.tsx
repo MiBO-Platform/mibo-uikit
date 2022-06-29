@@ -4,7 +4,10 @@ import { CardProps } from "./types";
 
 const Card: React.FC<CardProps> = ({ children, background, ...props }) => {
   return (
-    <ThemeUICard {...props} sx={{ variant: `cards.primary`, background }}>
+    <ThemeUICard {...props} sx={{
+      variant: `cards.primary`,
+      background,
+    }}>
       {children}
     </ThemeUICard>
   );

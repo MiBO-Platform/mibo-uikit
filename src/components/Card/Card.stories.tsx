@@ -10,9 +10,11 @@ export default {
       options: ["light", "dark"],
       control: { type: "inline-radio" },
     },
+    
     background: {
       control: { type: "select" },
     },
+    
   },
 };
 

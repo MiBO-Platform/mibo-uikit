@@ -18,7 +18,7 @@ export { default as Send } from "./Send";
 export { default as Error } from "./Error";
 export { default as Close } from "./Close";
 export { default as Collapse } from "./Collapse";
-export { default as TextLogo } from "./TextLogo";
+// export { default as TextLogo } from "./TextLogo";
 export { default as ProfileLight } from "./ProfileLight";
 export { default as ProfileDark } from "./ProfileDark";
 export { default as ProfileIcon } from "./ProfileIcon";

@@ -4,7 +4,7 @@ import Button from "./Button";
 import StorybookLayout from "../StorybookLayout/StorybookLayout";
 import Flex from "../Flex/Flex";
 import { variants } from "./types";
-import { LogoIcon } from "../Svg";
+import { LogoMIBO } from "../Svg";
 
 const flexStyle = {
   marginBottom: "32px",
@@ -54,12 +54,12 @@ export const WithVariations = (args: any) => {
   return (
     <StorybookLayout {...args}>
       <Flex sx={flexStyle}>
-        <Button startIcon={<LogoIcon />}>Start Icon</Button>
-        <Button endIcon={<LogoIcon />}>End Icon</Button>
-        <Button startIcon={<LogoIcon />} endIcon={<LogoIcon />}>
+        <Button startIcon={<LogoMIBO />}>Start Icon</Button>
+        <Button endIcon={<LogoMIBO />}>End Icon</Button>
+        <Button startIcon={<LogoMIBO />} endIcon={<LogoMIBO />}>
           Start & End Icon
         </Button>
-        <Button startIcon={<LogoIcon />} endIcon={<LogoIcon />}>
+        <Button startIcon={<LogoMIBO />} endIcon={<LogoMIBO />}>
           Start & End Icon
         </Button>
       </Flex>

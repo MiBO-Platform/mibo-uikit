@@ -1,7 +1,7 @@
 import { ButtonTheme } from "../components/Button/types";
 import { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices, FontFamily } from "./types";
 
-export interface ApeSwapTheme {
+export interface MIBOTheme {
   siteWidth: number;
   isDark: boolean;
   colors: Colors;
@@ -21,4 +21,4 @@ export { default as light } from "./light";
 export { lightColors } from "./colors";
 export { darkColors } from "./colors";
 
-export { default as Apeswap } from "./MIBO";
+export { default as MIBO } from "./MIBO";

@@ -3,7 +3,7 @@ const Colors = {
   backgroundDisabled: "#E9EAEB",
   navbar: "#F9F4E7",
   body: "#FDFBF5",
-  lvl1: "#F1EADA",
+  lvl1: "#F8F8FC",
   lvl2: "#EADFC7",
   primaryBright: "#FAFAFA",
   primaryDark: "#0B0B0B",

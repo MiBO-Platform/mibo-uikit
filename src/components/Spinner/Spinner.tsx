@@ -11,7 +11,7 @@ const Container = styled.div<{ size: number }>`
 const Spinner: React.FC<SpinnerProps> = ({ size = 300 }) => {
   return (
     <Container size={size}>
-      <ApeSpinner />
+      {/*<ApeSpinner />*/}
     </Container>
   );
 };
