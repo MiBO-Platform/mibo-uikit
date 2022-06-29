@@ -1,6 +1,6 @@
 {
-  "name": "@mibo/uikit",
-  "version": "1.3.7",
+  "name": "@miboplatform/uikit",
+  "version": "1.0.0",
   "description": "Set of UI components for mibo projects",
   "main": "dist/index.cjs.js",
   "resolutions": {
