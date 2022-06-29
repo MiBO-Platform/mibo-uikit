@@ -11,6 +11,13 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "mibo",
+    "blockchain",
+    "crypto",
+    "blocks",
+    "components"
+  ],
   "repository": "https://github.com/MIBO-Platform/mibo-uikit",
   "license": "MIT",
   "scripts": {
